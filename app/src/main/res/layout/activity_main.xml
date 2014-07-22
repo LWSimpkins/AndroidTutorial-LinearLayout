@@ -2,22 +2,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <!-- for width
+    <!-- horizontal spacing (horizontal orientation)
     - ems="10" manually set a width of the EditText, doesn't change for bigger screens
     - instead, use layout weight: space relative to other objects
     - set edit text to 1. Objects are set to 0 by default
     - Change layout_width (or height if vertical orientation) to 0 dp if using layout_weight
     -->
-    
+    <!-- for vertical location (horizontal orientation)
+- layout_gravity: change the vertical position of an element
+- it stays in the same horizontal "column"
+-->
   <EditText
       android:id="@+id/editText1"
-      android:layout_width="0dp"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_weight="1"/>
+      android:layout_weight="1"
+      android:layout_gravity="center"/>
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buttonText"/>
+        android:text="@string/buttonText"
+        android:layout_gravity="bottom"/>
 
 </LinearLayout>
