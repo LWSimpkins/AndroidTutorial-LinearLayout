@@ -12,12 +12,19 @@
 - layout_gravity: change the vertical position of an element
 - it stays in the same horizontal "column"
 -->
+    <!--location within a View object
+    -gravity: set the vertical/horizontal location of say text in an EditText
+    -can do more than one using | (i.e. bottom|left)
+    -View must be larger than the content; won't work if using wrap_content
+    -->
   <EditText
       android:id="@+id/editText1"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_height="150dp"
       android:layout_weight="1"
-      android:layout_gravity="center"/>
+      android:layout_gravity="center"
+      android:gravity="center_horizontal"
+      android:background="#bded84"/>
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
